@@ -1,0 +1,29 @@
+#  @name getAllMember
+GET http://localhost:3001/members
+
+###
+
+# @name addMember
+POST http://localhost:3001/members
+Content-Type: application/json
+
+{
+    "id": "031732",
+    "name": "NGANN"
+}
+
+###
+
+# @name editMember
+PATCH http://localhost:3001/members/031732
+Content-Type: application/json
+
+{
+    "id": "031731",
+    "name": "NGANN NEW"
+}
+
+###
+
+# @name removeMember
+DELETE  http://localhost:3001/members/031731
